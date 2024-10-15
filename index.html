@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Art Project</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+        }
+        .canvas-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        canvas {
+            border: 1px solid black;
+            width: 320px;
+            height: 320px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="canvas-container">
+        <canvas id="canvas1"></canvas>
+        <canvas id="canvas2"></canvas>
+        <canvas id="canvas3"></canvas>
+        <canvas id="canvas4"></canvas>
+        <canvas id="canvas5"></canvas>
+        <canvas id="canvas6"></canvas>
+        <canvas id="canvas7"></canvas>
+        <canvas id="canvas8"></canvas>
+        <canvas id="canvas9"></canvas>
+    </div>
+    <button onclick="regenerateCanvases()">Regenerate Canvases</button>
+
+    <script src="js/tiled-lines.js"></script>
+    <script src="js/joy-division.js"></script>
+    <script src="js/cubic-disarray.js"></script>
+    <script src="js/triangular-mesh.js"></script>
+    <script src="js/un-deux-trois.js"></script>
+    <script src="js/circle-packing.js"></script>
+    <script src="js/hypnotic-squares.js"></script>
+    <script src="js/piet-mondrian.js"></script>
+    <script src="js/hours-after-dark.js"></script>
+
+    <script>
+        function regenerateCanvases() {
+            location.reload();
+        }
+    </script>
+</body>
+</html>
